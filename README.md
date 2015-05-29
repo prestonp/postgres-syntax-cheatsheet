@@ -52,7 +52,7 @@ If you wanted more user or db info, you'd have to add more top level keys like `
     user_id: 1, 
     user_name: 'Preston', 
     db_id: 1, 
-    db_name: '' 
+    db_name: 'foo' 
   }
 ]
 ```
