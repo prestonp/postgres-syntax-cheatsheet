@@ -29,7 +29,7 @@ where user_id = $1
 
 This is much better than returning foreign keys like `user_id`, `db_id`
 
-```json
+```js
 [
   { 
     id: 5, 
@@ -43,7 +43,7 @@ This is much better than returning foreign keys like `user_id`, `db_id`
 
 If you wanted more user or db info, you'd have to add more top level keys like `user_name`, `database_name`. This is shitty.
 
-```json
+```js
 [
   { 
     id: 5, 
@@ -59,7 +59,7 @@ If you wanted more user or db info, you'd have to add more top level keys like `
 
 Instead, using the above nested json querying we can provide better hierarchy:
 
-```json
+```js
 [
   { 
     id: 5, 
