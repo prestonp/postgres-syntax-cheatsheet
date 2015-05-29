@@ -6,3 +6,6 @@ Containment
 ```sql
 select * from SOME_TABLE where SOME_ARRAY_COLUMN @> '{Red, Blue}';
 ```
+
+Subqueries
+```
