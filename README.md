@@ -70,3 +70,17 @@ Instead, using the above nested json querying we can provide better hierarchy:
   }
 ]
 ```
+
+### Querying JSON
+
+get key as text
+
+```
+select person->>'dogs';
+```
+
+get nested keys, note that `->` returns value as json
+
+```
+select person->'dogs'->0->'breed' from people where id = 77;
+```
