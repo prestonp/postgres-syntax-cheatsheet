@@ -75,13 +75,13 @@ Instead, using the above nested json querying we can provide better hierarchy:
 
 get key as text
 
-```
+```sql
 select person->>'dogs';
 ```
 
 get nested keys, note that `->` returns value as json
 
-```
+```sql
 select person->'dogs'->0->'breed' from people where id = 77;
 ```
 
@@ -89,6 +89,11 @@ select person->'dogs'->0->'breed' from people where id = 77;
 
 discovered in http://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf
 
-```
+```sh
 psql -c "select * from dogs" -H -o dogs.html
 ```
+
+### Other cheatsheets
+
+* [basic syntax](http://www.petefreitag.com/cheatsheets/postgresql/)
+* [psql](http://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf)
