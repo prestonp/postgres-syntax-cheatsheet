@@ -84,3 +84,11 @@ get nested keys, note that `->` returns value as json
 ```
 select person->'dogs'->0->'breed' from people where id = 77;
 ```
+
+### Output table as html
+
+discovered in http://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf
+
+```
+psql -c "select * from dogs" -H -o dogs.html
+```
